@@ -1,0 +1,16 @@
+package puntosExtra;
+
+public class SumaDigitos {
+	
+	public int sumaDigitos(int sumaD) {
+		// Caso base: si el número tiene un solo dígito, retorna ese dígito
+		if (sumaD < 10) {
+			return sumaD;
+		} else {
+			// Obtiene el último dígito y lo suma al resultado de la llamada recursiva con el número restante
+			int ultimoDigito = sumaD % 10;
+			int restoNumero = sumaD / 10;
+			return ultimoDigito + sumaDigitos(restoNumero);
+		}
+	}
+}
