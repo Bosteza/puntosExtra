@@ -1,0 +1,28 @@
+package puntosExtra;
+import java.util.Scanner;
+
+public class Process {
+	public void exe() {
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		//prtins para Suma Dígitos
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Ingrese un número para sumar sus dígitos: ");
+		int suma = Integer.parseInt(scan.nextLine());
+		SumaDigitos sumD = new SumaDigitos();
+		int sum = sumD.sumaDigitos(suma);
+		System.out.println("La suma de los dígitos de " + suma + " es: " + sum);
+		
+		scan.close();
+	}
+}
